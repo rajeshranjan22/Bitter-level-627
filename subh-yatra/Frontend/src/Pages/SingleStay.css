@@ -1,0 +1,35 @@
+
+
+.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+  }
+  
+  .header {
+    /* width: 50%; */
+    
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(128, 128, 128,0.5);
+  }
+  
+  .header_link {
+    padding: 10px;
+    color: black;
+    /* font-weight: bold; */
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    outline: none;
+    /* border: 1px solid red; */
+  }
+  
+  .selected {
+    border-bottom: 3px solid #3662d8;
+    color: #3662d8;
+  }
+  
