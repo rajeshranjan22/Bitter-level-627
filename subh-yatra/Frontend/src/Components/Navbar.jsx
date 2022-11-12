@@ -69,23 +69,21 @@ const Navbar = () => {
               </div>
             </MenuButton>
             <MenuList boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px" minW="300px">
-              <Link to="/nav_hotel">
+    
+            <Link to="/nav_hotel">
                 <MenuItem display="flex" mt="0.8rem" gap="1rem">
                   <FaHotel size="1.4rem" /> Stays
                 </MenuItem>
               </Link>
-
-              <Link to="/nav_flights">
+             
                 <MenuItem display="flex" mt="0.8rem" gap="1rem">
                   <MdFlight size="1.4rem" /> Flights
-                </MenuItem>
-              </Link>
+                </MenuItem>           
 
-              <Link to="/nav_car">
                 <MenuItem display="flex" mt="0.8rem" gap="1rem">
                   <IoMdCar size="1.4rem" /> Cars
                 </MenuItem>
-              </Link>
+              
               <MenuItem display="flex" mt="0.8rem" gap="1rem">
                 <BsHandbagFill size="1.4rem" /> Packages
               </MenuItem>
@@ -111,11 +109,7 @@ const Navbar = () => {
             <BsGlobe className="hoverIcons" />
             <Text _hover={{ color: "blue", cursor: "pointer" }}>English</Text>
           </Flex>
-          <Box>
-            <Text _hover={{ color: "blue", cursor: "pointer" }}>
-              List your property
-            </Text>
-          </Box>
+          
           <Box>
             <Text _hover={{ color: "blue", cursor: "pointer" }}>Support</Text>
           </Box>
@@ -126,8 +120,8 @@ const Navbar = () => {
             <BsBellFill className="hoverIcons" />
           </Box>
           <Box display="flex" alignItem="center">
-            {/* {isAuth ? <UserDetail /> : <SigninMenuList />} */}
-            <Text>Signin</Text>
+            {isAuth ? <UserDetail /> : <SigninMenuList />}
+            
           </Box>
         </Flex>
 
@@ -157,12 +151,7 @@ const Navbar = () => {
                   English
                 </Text>
               </Flex>
-
-              <Box m="25px auto">
-                <Text _hover={{ color: "blue", cursor: "pointer" }}>
-                  List your property
-                </Text>
-              </Box>
+             
 
               <Box m="25px auto">
                 <Text _hover={{ color: "blue", cursor: "pointer" }}>
