@@ -42,7 +42,7 @@ export default function SsignIn() {
       });
       // alert("Your Account Sucessfully Created");
       setTimeout(() => {
-        navigate("/");
+        navigate("/signin");
       }, 2000);
     }
   }, [isAuth]);
